@@ -14,6 +14,7 @@ class Converter:
         omega = math.degrees(omega)
         phi = math.degrees(phi)
         spherical = [r, omega, phi, fr, fomega, fphi]
+        spherical = [round(num, 2) for num in spherical]
         return spherical
 
     print(rectangular2spherical(3, 4, 12, 9, 8, 36))
